@@ -38,8 +38,8 @@ public class ResponderJSON extends HttpServlet {
 		//2. Crear un objeto JSON utilizando el builder.
 		JsonObject objetoJSON = builder.add("Nombre", "Daniel")
 			.add("correo", "daniel@ejemplo.local")
-			.add("telefonos", Json.createArrayBuilder() //En este caso se esta a�adiendo como valor un Array de objetos.
-			.add(Json.createObjectBuilder() //A�adiendo objetos al Array.
+			.add("telefonos", Json.createArrayBuilder() //En este caso se esta añadiendo como valor un Array de objetos.
+			.add(Json.createObjectBuilder() //Añadiendo objetos al Array.
 			.add("tipo", "Casa").add("numero", "451245")
 			.add("tipo", "Particular").add("numero", "847219305"))).build();
 	
